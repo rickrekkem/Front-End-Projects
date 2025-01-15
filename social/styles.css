@@ -1,0 +1,79 @@
+/*@font-face { font-family: 'Inter-VariableFont_slnt,wght'; src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf'); } */
+body {
+    margin: 0;
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .primary {
+    background-color: hsl(0, 0%, 20%); /* Bright green */
+    color: hsl(0, 0%, 100%); /* White text */
+  }
+  
+  .primary:hover {
+    background-color: hsl(75, 94%, 57%); /* Slightly darker green */
+    color: hsl(0, 0%, 20%); /* Dark text */
+  }
+  
+  .profile {
+    width: 30%;
+    border-radius: 200px;
+    margin-bottom: 0px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    font-weight: 400;
+  }
