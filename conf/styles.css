@@ -5,14 +5,55 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 8%);
   }
+
+  .bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('./assets/images/background-desktop.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .bg-image {
+    position: absolute;
+  }
+
+    .bg1 {
+        top: 0%;
+        width: 105%;
+    }
+
+    .bg2 {
+        bottom: 0%; /* Adjust vertical position */
+        left: 0%; /* Adjust horizontal position */
+    }
+
+    .bg3 {
+        top: 0%; /* Adjust vertical position */
+        right: 0%; /* Adjust horizontal position */
+    }
+
+    .bg4 {
+        top: -10%;
+        left: 6.5%;
+    }
   
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
+    padding: 0px;
+    outline: 0px;
+    max-width: 80vw;
+    background: rgba(0, 0, 0, 0);
   }
   
   .card {
@@ -56,8 +97,8 @@ body {
     font-size: 24px;
     color: hsl(0, 0%, 100%);
     margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-weight: 600;
   }
 
@@ -65,8 +106,8 @@ body {
     font-size: 14px;
     color: hsl(75, 94%, 57%);
     margin-bottom: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-weight: 600;
   }
   
@@ -75,4 +116,6 @@ body {
     color: hsl(0, 0%, 100%);
     line-height: 1.5;
     font-weight: 400;
+    margin-left: 100px;
+    margin-right: 100px;
   }
