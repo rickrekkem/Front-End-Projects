@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<dev class="card">
+  <h1>Contact Us</h1>
+  <form id="form">
+  <div class = "nameEntry">
+    <div class = "nameEntryF">
+    <p>First Name *</p>
+    <div class = textBox>
+      <input type="text" id="firstname" name="firstname" placeholder="" required>
+    <div class="error-message" id="fnameError">This field is required</div>
+    </div>
+    </div>
+
+    <div class = "nameEntryL">
+    <p>Last Name *</p>
+    <div class = textBox>
+      <input type="text" id="lastname" name="lastname" placeholder="" required>
+      <div class="error-message" id="lnameError">This field is required</div>
+    </div>
+    </div>
+  </div>
+
+  <div class = "emailEntry">
+  <p>Email Address *</p>
+  <div class = textBoxLong>
+    <input type="text" id="email" name="email" type="email" required>
+    <div class="error-message" id="emailError">Please enter a valid email addres</div>
+  </div>
+  </div>
+
+  <div class = "queryEntry">
+    <label for="queryType">Query Type *</label>
+    <div class="query-options">
+      <label class="query-option">
+        <input type="radio" name="queryType" value="general" required>
+        <span>General Enquiry</span>
+      </label>
+      <label class="query-option">
+        <input type="radio" name="queryType" value="support" required>
+        <span>Support Request</span>
+      </label>
+    </div>
+    <div class="error-message" id="queryError">Please select a query type</div>
+  </div>
+
+  <p>Message *</p>
+  <div class = textBoxLarge>
+    <textarea class="flex-text" id="msg" name="msg" placeholder="" required> </textarea>
+    <div class="error-message" id="msgError">This field is required</div>
+  </div>
+
+  <label>
+    <input type="checkbox" class="checkbox" id="consent" value="1" required>
+    I consent to being contacted by the team *
+  </label>
+  <div class="error-message" id="consentError">To submit this form, please consent to being contacted</div>
+
+  <button class="submit" id="submitButton">
+  <p>Submit</p>
+  </button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

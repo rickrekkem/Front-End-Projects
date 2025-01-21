@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Karla;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.card {
+    position: center;
+    width: 600px;
+    height: 680px;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.nameEntry {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Push items to the edges */
+    align-items: flex-start; /* Align items at the top */
+    width: 580px;
+}
+
+.nameEntryF,
+.nameEntryL {
+    text-align: left;
+    width: 270px;
+    line-height: 5px;
+}
+
+.textBox {
+  padding-bottom: 20px;
+    input[type="text"] {
+        width: 100%; /* Full width */
+        padding: 10px; /* Add padding */
+        margin: 10px 0; /* Add some margin */
+        border: 1px solid #ccc; /* Border styling */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+      }
+      input[type="text"]:focus {
+        border-color: #007BFF; /* Change border color on focus */
+        outline: none; /* Remove default outline */
+      }
+      input.invalid {
+        border-color: red; /* Add red border for invalid input */
+        outline: none; /* Remove default outline */
+      }
+}
+
+.textBoxLong {
+  margin-bottom: 20px;
+    input[type="text"] {
+        width: 580px; /* Full width */
+        padding: 10px; /* Add padding */
+        margin: 10px 0; /* Add some margin */
+        border: 1px solid #ccc; /* Border styling */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+      }
+      input[type="text"]:focus {
+        border-color: #007BFF; /* Change border color on focus */
+        outline: none; /* Remove default outline */
+      }
+      input.invalid {
+        border-color: red; /* Add red border for invalid input */
+        outline: none; /* Remove default outline */
+      }
+}
+
+.textBoxLarge {
+  .flex-text {
+        width: 580px; /* Full width */
+        height: 100px;
+        padding: 0 10px; /* Add padding */
+        margin: 10px 0; /* Add some margin */
+        border: 1px solid #ccc; /* Border styling */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+        vertical-align: top;
+        text-align: left;
+        line-height: 1;
+        resize: none;
+        box-sizing: border-box;
+        align-items: end; 
+        justify-content: flex-end;
+      }
+      .flex-text:focus {
+        border-color: #007BFF; /* Change border color on focus */
+        outline: none; /* Remove default outline */
+      }
+      .flex-text.invalid {
+        border-color: red; /* Add red border for invalid input */
+        outline: none; /* Remove default outline */
+      }
+}
+
+.error-message {
+    color: red;
+    line-height: 0;
+    padding-top: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.query-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .query-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 580px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .query-option input[type="radio"] {
+    display: block; /* Hide the radio button */
+  }
+  
+  .query-option span {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .query-option input[type="radio"]:checked {
+    color: hsl(169, 82%, 27%);
+    border-color: hsl(169, 82%, 27%);
+  }
+  
+  .query-option input[type="radio"]:checked + span {
+    color: hsl(169, 82%, 27%);
+    border-color: hsl(169, 82%, 27%);
+  }
+  
+  .query-option input[type="radio"]:checked + span::before {
+    /*content: "● ";*/
+    color: hsl(169, 82%, 27%);
+    border-color: hsl(169, 82%, 27%);
+  }
+  
+  .query-option:hover {
+    border-color: #007B55;
+  }
+  
+  .query-option input[type="radio"]:checked ~ .query-option {
+    background-color: #EAF7F0;
+    border-color: hsl(169, 82%, 27%);
+  }
+
+  .checkbox {
+    margin-top: 25px;
+  }
+
+  .submit {
+    color: #EAF7F0;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 10px;
+    width: 600px;
+    margin-top: 25px;
+    outline: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    position: bottom;
+  }
+
+  h1 {
+    margin-top: 0px;
+  }
