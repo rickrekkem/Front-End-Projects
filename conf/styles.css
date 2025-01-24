@@ -1,6 +1,13 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Inter;
+    font-family: Inconsolata;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,22 +17,26 @@ body {
                       url("./assets/images/pattern-circle.svg"),
                       url("./assets/images/pattern-lines.svg"), 
                       url("./assets/images/background-desktop.png");
-    background-size: auto, auto, auto, auto, 103%, cover;
+    background-size: 40%, auto, auto, auto, 103%, cover;
     background-position: bottom left, top right, top -12% left 5%, center right 20%, top center, center;
     background-repeat: no-repeat;
-    height: 1100px;
-    width: 1440px;
+    min-height: 100vh;
+  }
+
+  .header {
+    width: 800px;
   }
   
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    display: block;
+    justify-content: space-between;
     text-align: center;
-    max-width: 500px;
-    padding: 0px;
+    width: 100%;
+    width: 600px;
+    height: 800px;
+    padding: 20px;
     outline: 0px;
-    max-width: 100vw;
     background: rgba(0, 0, 0, 0);
   }
 
@@ -33,11 +44,176 @@ body {
     /*background-color: rgba(0, 0, 0, 0);*/
     border-radius: 15px;
     text-align: center;
-    padding: 15px;
-    max-width: 500px;
-    position: absolute;
-    left: 40%;
-    top: 10%;
+    position: center;
+    margin-bottom: 10px;
+  }
+
+  .branding img {
+    vertical-align: middle; /* Align image with the middle of the text */
+    width: 40px; /* Optional: Adjust the image size */
+    height: auto;
+}
+
+
+  .registerForm {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .avatar {
+    text-align: left;
+  }
+
+  .upload-box {
+      border: 2px dashed #555;
+      border-radius: 10px;
+      height: 100px;
+      padding: 5px;
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: rgba(75, 72, 106, 0.2);
+      outline-color: rgba(0, 0, 0, 0);
+      transition: border-color 0.3s ease, color 0.3s ease;
+      transition: outline-color 0.3s ease, color 0.3s ease;
+      outline-offset: 3px;
+      outline-width: 0px;
+  }
+
+  .upload-box img {
+    display: block;
+    width: 40px;
+    padding: 8px;
+    margin: 10px auto; /* Center the image horizontally */
+    background-color: hsl(245, 19%, 35%);
+    border-radius: 10px;
+    border-color: hsl(245, 15%, 58%);
+    border-width: 10px;
+  }
+  
+  .avatar small {
+      font-size: 0.8rem;
+      color: #aaa;
+  }
+  
+  .upload-box input {
+      display: none;
+  }
+  
+  .upload-box:hover, .upload-box:focus {
+      outline-color: hsl(245, 15%, 58%);
+      outline-width: 3px;
+      outline-style: solid;
+  }
+
+  .imgInfo {
+    display: block;
+  }
+
+  .imgInfo.invalid {
+    display: none;
+  }
+
+  .errorMsg {
+    display: none;
+  }
+  
+  .errorMsg.invalid {
+    display: block;
+    color: hsl(7, 71%, 60%);
+  }
+  
+  .errorMsg.invalid img{
+    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(100%);
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .info img {
+    text-align: left;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 10%;
+    margin-right: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+  }
+  
+  .form-group label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #aaa;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: rgba(75, 72, 106, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    outline-color: rgba(0, 0, 0, 0);
+    transition: border-color 0.3s ease, color 0.3s ease;
+    transition: outline-color 0.3s ease, color 0.3s ease;
+    outline-offset: 3px;
+    outline-width: 0px;
+  }
+
+  .form-group input:hover {
+    outline-color: hsl(245, 15%, 58%);
+    outline-width: 3px;
+    outline-style: solid;
+  }
+
+  .form-group input::placeholder {
+    color: #aaa;
+  }
+
+  .form-group input:focus {
+    border-color: hsl(245, 15%, 58%);
+    outline-color: hsl(245, 15%, 58%);
+    outline-width: 3px;
+    outline-style: solid;
+  }
+  
+  .textBox {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+      input[type="text"] {
+          width: 100%; /* Full width */
+          padding: 10px; /* Add padding */
+          margin: 10px 0; /* Add some margin */
+          border: 1px solid #ccc; /* Border styling */
+          border-radius: 10px; /* Rounded corners */
+          font-size: 16px; /* Font size */
+        }
+        input[type="text"]:focus {
+          border-color: #007BFF; /* Change border color on focus */
+        }
+        input.invalid {
+          border-color: hsl(7, 88%, 67%); /* Add red border for invalid input */
+        }
+  }
+
+  .textBox.invalid {
+    border-color: hsl(7, 71%, 60%);
   }
   
   .card {
@@ -50,15 +226,27 @@ body {
   }
 
   .btn {
-    width: 100%;
+    width: 400px;
     padding: 15px;
     margin: 10px 0;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 16px;
     font-weight: 600;
+    color: hsl(248, 70%, 10%);
     cursor: pointer;
+    background-color: hsl(7, 88%, 67%);
     transition: background-color 0.3s ease, color 0.3s ease;
+    transition: outline-color 0.3s ease, color 0.3s ease;
+    outline-offset: 3px;
+    outline-width: 0px;
+  }
+
+  .btn:hover {
+    background-color: #e85c0c;
+    outline-color: hsl(245, 15%, 58%);
+    outline-width: 3px;
+    outline-style: solid;
   }
 
   .primary {
@@ -78,28 +266,40 @@ body {
   }
   
   h1 {
-    font-size: 24px;
+    font-size: 40px;
     color: hsl(0, 0%, 100%);
     margin-bottom: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
     font-weight: 600;
   }
 
   h2 {
-    font-size: 14px;
-    color: hsl(75, 94%, 57%);
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
     margin-bottom: 25px;
     margin-left: 100px;
     margin-right: 100px;
     font-weight: 600;
   }
   
-  p {
-    font-size: 14px;
+  h3 {
+    font-size: 20px;
     color: hsl(0, 0%, 100%);
     line-height: 1.5;
     font-weight: 400;
-    margin-left: 100px;
-    margin-right: 100px;
+  }
+  
+  h6 {
+    color: hsl(245, 15%, 58%);
+    line-height: 1.5;
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    margin-top: 10px;
   }

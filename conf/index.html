@@ -14,37 +14,52 @@
   <!-- Form starts -->
   <div class="container">
     <div class = "branding">
-      <img src="./assets/images/logo-mark.svg" alt="Coding Conf logo"> <h1>Coding Conf</h1>
+      <h2><img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" class="logo" />  Coding Conf</h2>
     </div>
-    <div class = "header">
-      <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+    <header>
+      <h1>Your Journey to Coding Conf<br>2025 Starts Here!</h1>
 
-      <p>Secure your spot at next year's biggest coding conference.</p>
-    </div>
-    <div class = "form">
+      <h3>Secure your spot at next year's biggest coding conference.</h3>
+    </header>
+    <form class = "registerForm" action="/upload" method="post" enctype="multipart/form-data">
+      <div class="avatar">
       <p>Upload Avatar</p>
-      <p>Drag and drop or click to upload</p>
-      <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
-
-      <p>Full Name</p>
-
-      <p>Email Address</p>
-      <p>example@email.com</p>
-
-      <p>GitHub Username</p>
-      <p>@yourusername</p>
-
-      <p>Generate My Ticket</p>
+        <div class="upload-box">
+            <input type="file" id="avatar" accept="image/png, image/jpeg" name="imgInput">
+            <img src="./assets/images/icon-upload.svg">
+            <span>Drag and drop or click to upload</span>
+        </div>
+        <div class="info">
+          <h6 class="imgInfo" id="imgInfo"><img src="./assets/images/icon-info.svg" alt="Info icon">Upload your photo (JPG or PNG, max size: 500KB).</h6>
+          <h6 class="errorMsg" id="imgError"><img src="./assets/images/icon-info.svg" alt="Info icon">File too large. Please upload a file under 500KB.</h6>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Full Name</p>
+        <input type="text" class="textBox" id="nameBox" required>
+      </div>
+      <div class="form-group">
+        <p>Email Address</p>
+        <input type="text" class="textBox" id="emailBox" placeholder="example@email.com" required>
+        <div class="info">
+        <h6 class="errorMsg" id="emailError"><img src="./assets/images/icon-info.svg" alt="Info icon">Please enter a valid email address.</h6>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>GitHub Username</p>
+        <input type="text" class="textBox" id="gitBox" placeholder="@yourusername" required>
+      </div>
+      <button type="submit" class="btn" id="btn">Generate My Ticket</button>
     </div>
 
   <!-- Form ends -->
 
-  <!-- Generated tickets starts -->
+  <!-- Generated tickets starts ->
 
-  <p>Congrats, <!-- Full Name -->! Your ticket is ready.</p>
+  <p>Congrats, <!-- Full Name ->! Your ticket is ready.</p>
 
-  <p>We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.</p>
-
+  <p>We've emailed your ticket to <!-- Email Address -> and will send updates in the run up to the event.</p>
+  
   <p>Coding Conf</p>
   <p>Jan 31, 2025 / Austin, TX</p>
 
@@ -52,5 +67,6 @@
   
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
