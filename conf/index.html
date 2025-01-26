@@ -25,9 +25,18 @@
       <div class="avatar">
       <p>Upload Avatar</p>
         <div class="upload-box">
+          <div class="avatar-preview" id="avatarPreview">
+            <img id="avatarImage" src="" alt="Avatar Preview" class="hidden">
+          </div>
+          <div class="action-buttons hidden" id="actionButtons">
+            <button id="removeImage">Remove image</button>
+            <button id="changeImage">Change image</button>
+          </div>
+          <div class="uploadInstructions" id="uploadInstructions">
             <input type="file" id="avatar" accept="image/png, image/jpeg" name="imgInput">
             <img src="./assets/images/icon-upload.svg">
             <span>Drag and drop or click to upload</span>
+          </div>
         </div>
         <div class="info">
           <h6 class="imgInfo" id="imgInfo"><img src="./assets/images/icon-info.svg" alt="Info icon">Upload your photo (JPG or PNG, max size: 500KB).</h6>
