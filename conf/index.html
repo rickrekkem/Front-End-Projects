@@ -12,16 +12,18 @@
 </head>
 <body>
   <!-- Form starts -->
-  <div class="container">
+   <div class="container">
     <div class = "branding">
       <h2><img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" class="logo" />  Coding Conf</h2>
     </div>
+    
+  <div class="container" id="container">
     <header>
       <h1>Your Journey to Coding Conf<br>2025 Starts Here!</h1>
 
       <h3>Secure your spot at next year's biggest coding conference.</h3>
     </header>
-    <form class = "registerForm" action="/upload" method="post" enctype="multipart/form-data">
+    <form class = "registerForm" id="form">
       <div class="avatar">
       <p>Upload Avatar</p>
         <div class="upload-box">
@@ -46,6 +48,9 @@
       <div class="form-group">
         <p>Full Name</p>
         <input type="text" class="textBox" id="nameBox" required>
+        <div class="info">
+        <h6 class="errorMsg" id="nameError"><img src="./assets/images/icon-info.svg" alt="Info icon">Please enter a name.</h6>
+        </div>
       </div>
       <div class="form-group">
         <p>Email Address</p>
@@ -57,15 +62,38 @@
       <div class="form-group">
         <p>GitHub Username</p>
         <input type="text" class="textBox" id="gitBox" placeholder="@yourusername" required>
+        <div class="info">
+        <h6 class="errorMsg" id="gitError"><img src="./assets/images/icon-info.svg" alt="Info icon">Please enter a valid github.</h6>
+        </div>
       </div>
       <button type="submit" class="btn" id="btn">Generate My Ticket</button>
     </div>
 
   <!-- Form ends -->
 
-  <!-- Generated tickets starts ->
+  <!-- Generated tickets starts -->
 
-  <p>Congrats, <!-- Full Name ->! Your ticket is ready.</p>
+  <header class="ticketTop" id="ticketTop">
+    <h1>Congrats, <span id="userName"></span>!</h1>
+    <h1>Your ticket is ready.</h1><br>
+
+    <h3>We've emailed your ticket to <span id="ticketEmail"></span> and will send updates in the run up to the event.</h3>
+  </header>
+    <div class="ticket-container" id="ticketContainer">
+      <img src="./assets/images/pattern-ticket.svg"/>
+        <div class="ticket">
+            <h2><img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" class="logo" />  Coding Conf</h2>
+            <p>Jan 31, 2025 - Austin, TX</p>
+            <div class="user-info">
+                <img id="ticketImage" src="" alt="Profile Picture">
+                <div>
+                    <h5><span id="ticketName"></span></h5><br>
+                    <h6><img src="./assets/images/icon-github.svg"><span id="ticketGitHub"></h6>
+                </div>
+            </div>
+        </div>
+
+  <!--p>Congrats, <!-- Full Name ->! Your ticket is ready.</p>
 
   <p>We've emailed your ticket to <!-- Email Address -> and will send updates in the run up to the event.</p>
   
@@ -74,6 +102,7 @@
 
   <!-- Generated tickets ends -->
   
+</div>
 </div>
 </div>
 <script src="script.js"></script>
