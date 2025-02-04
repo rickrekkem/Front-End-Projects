@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: 2Dumb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./assets/images/meowmeow.png");
+      background-size: 100%;
+      position: top;
+      background-position-y: -100px;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+  
+    .header {
+      width: 800px;
+    }
+
+    @keyframes vignette {
+        from {opacity: 0.6};
+        to {opacity: 0.8};
+    }
+    .vignette-fade {
+        animation: vignette 1s forwards;
+    }
+
+    .vignette {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none; /* Allows interaction with elements below */
+        background: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+      }
+
+    .matrix {
+        display: block;
+        position: center;
+    }
+
+    .row {
+        width: 100vw;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .meow {
+        background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+        border-width: 5px;
+        border-radius: 10px;
+        border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
+        background-size: cover;
+        cursor: pointer;
+        width: 200px;
+        height: 150px;
+        margin: 70px;
+    }
+
+    .meow:hover {
+        opacity: 0.9;
+        background: url("./assets/images/meowmeowmeowmeow.png") no-repeat center center;
+        background-size: cover;
+      }
+      
+    .meow:disabled {
+        background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+    }
+
+    .meow5 {
+        background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+        border-width: 5px;
+        border-radius: 10px;
+        border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
+        background-size: cover;
+        cursor: pointer;
+        width: 200px;
+        height: 150px;
+        margin: 70px;
+        transition: opacity 0.5s ease-in;
+        z-index: 3;
+    }
+
+    .meow5:hover {
+        opacity: 0.9;
+        background: url("./assets/images/meowmeowmeowmeow.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .meow5:active {
+    }
+
+
+    .meow5:disabled:hover {
+        background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+        background-size: cover;
+
+    }
+
+    .meowzers1 {
+        display: none;
+        transform: scaleX(-1);
+        width: 200px;
+        margin: 70px;
+        position: relative;
+        transition: transform 1s ease-in-out
+    }
+
+    .meowzers3 {
+        display: none;
+        width: 200px;
+        margin: 70px;
+        position: relative;
+        transition: transform 1s ease-in-out
+    }
+
+
+    img {
+        margin-top: 20px;
+        width: 150px;
+        height: auto;
+    }
+
+    .wow {
+        width: 50px;
+        height: 50px;
+    }
