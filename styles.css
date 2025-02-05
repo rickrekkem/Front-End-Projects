@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: 2Dumb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*background-image: url("./assets/images/meowmeow.png");*/
+      position: top;
+      background-position-y: -100px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgb(20, 20, 20), rgb(60, 60, 60));
+      overflow: hidden;
+    }
+  
+  .buttons {
+    justify-content: center;
+    align-items: center;
+    position: center;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+  }
+
+  .portal {
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+    background: linear-gradient(135deg, rgb(59, 126, 72), rgb(91, 16, 86));
+    color: rgb(222, 222, 222);
+    box-shadow: black;
+    text-shadow: black;
+  }
+
+  h1 {
+    color: rgb(222, 222, 222);
+  }
