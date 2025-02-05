@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: Inconsolata;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./images/justin2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 0, 0);
+        background-color: rgb(0, 0, 0);
+    }
+  
