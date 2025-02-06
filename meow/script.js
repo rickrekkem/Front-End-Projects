@@ -118,12 +118,12 @@ meow5.addEventListener("mouseover", (event) => {
 });
   
 meow5.addEventListener("click", (event) => {
-    if (meows > -18) {
-        meows -= 18;
+    if (meows > -37) {
+        meows -= 37;
     } else {
     
         const img = document.createElement('img');
-        switch(meowmeows) {
+        switch(Math.round(meowmeows % 4)) {
             case 0:
                 img.src = './assets/images/meowzers1.png'; // Replace with your image path
                 break;
@@ -138,9 +138,6 @@ meow5.addEventListener("click", (event) => {
                 break;
         }
         meowmeows += 1;
-        if (meowmeows == 4) {
-            meowmeows = 0;
-        }
         img.width = 50;
         img.style.position = "absolute";
         img.style.zIndex = 2;

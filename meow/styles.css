@@ -11,17 +11,13 @@
       justify-content: center;
       align-items: center;
       background-image: url("./assets/images/meowmeow.png");
-      background-size: 100%;
+      background-size: 100vw, 130vh;
       position: top;
-      background-position-y: -100px;
       background-repeat: no-repeat;
       min-height: 100vh;
       overflow: hidden;
     }
-  
-    .header {
-      width: 800px;
-    }
+
 
     @keyframes vignette {
         from {opacity: 0.6};
@@ -48,7 +44,7 @@
 
     .row {
         width: 100vw;
-        height: 300px;
+        height: 30vh;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -61,10 +57,14 @@
         border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
         background-size: cover;
         cursor: pointer;
-        width: 200px;
-        height: 150px;
-        margin: 70px;
+        width: 15vw;
+        height: 20vh;
+        max-width: 15vw;
+        min-width: 10vw;
+        max-height: 60%;
+        margin: 4vw;
     }
+
 
     .meow:hover {
         opacity: 0.9;
@@ -83,12 +83,16 @@
         border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
         background-size: cover;
         cursor: pointer;
-        width: 200px;
-        height: 150px;
-        margin: 70px;
+        width: 15vw;
+        height: 20vh;
+        max-width: 15vw;
+        min-width: 10vw;
+        max-height: 60%;
+        margin: 4vw;
         transition: opacity 0.5s ease-in;
         z-index: 3;
     }
+
 
     .meow5:hover {
         opacity: 0.9;
@@ -109,16 +113,22 @@
     .meowzers1 {
         display: none;
         transform: scaleX(-1);
-        width: 200px;
-        margin: 70px;
+        width: 15vw;
+        height: 20vh;
+        max-width: 15vw;
+        min-height: 20vh;
+        margin: 4vw;
         position: relative;
         transition: transform 1s ease-in-out
     }
 
     .meowzers3 {
         display: none;
-        width: 200px;
-        margin: 70px;
+        width: 15vw;
+        height: 20vh;
+        max-width: 15vw;
+        min-height: 20vh;
+        margin: 4vw;
         position: relative;
         transition: transform 1s ease-in-out
     }
@@ -133,4 +143,78 @@
     .wow {
         width: 50px;
         height: 50px;
+    }
+
+    @media (max-width: 120vh) {
+        body {
+            margin: 0;
+            font-family: 2Dumb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./assets/images/meowmeow.png");
+            background-size: 150vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            overflow: hidden;
+          }
+
+        .meow {
+            background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+            border-width: 5px;
+            border-radius: 10px;
+            border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
+            background-size: cover;
+            cursor: pointer;
+            width: 20vw;
+            height: 15vh;
+            max-width: 20vw;
+            min-width: 20vw;
+            max-height: 60%;
+            margin: 4vw;
+        }
+
+        .meow5 {
+            background: url("./assets/images/meowmeowmeow.png") no-repeat center center;
+            border-width: 5px;
+            border-radius: 10px;
+            border: linear-gradient(60deg, rgb(52, 52, 52), rgba(22, 22, 22, 0.4));
+            background-size: cover;
+            cursor: pointer;
+            width: 20vw;
+            height: 15vh;
+            max-width: 20vw;
+            min-width: 20vw;
+            max-height: 60%;
+            margin: 4vw;
+            transition: opacity 0.5s ease-in;
+            z-index: 3;
+        }
+
+        .meowzers1 {
+            display: none;
+            transform: scaleX(-1);
+            width: 20vw;
+            height: 15vh;
+            max-width: 20vw;
+            min-width: 20vw;
+            min-height: 15vh;
+            margin: 4vw;
+            position: relative;
+            transition: transform 1s ease-in-out
+        }
+
+        .meowzers3 {
+            display: none;
+            width: 20vw;
+            height: 15vh;
+            max-width: 20vw;
+            min-width: 20vw;
+            min-height: 15vh;
+            margin: 4vw;
+            position: relative;
+            transition: transform 1s ease-in-out
+        }
+        
     }
