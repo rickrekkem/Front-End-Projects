@@ -39,6 +39,9 @@
     text-align: center;
     width: 40vw;
     height: 80vh;
+    display: flex;
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center;
   }
 
   .portal {
@@ -50,9 +53,6 @@
     filter: opacity(90%) saturate(40%) contrast(110%);
     color: rgb(222, 222, 222);
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.9), -1px -1px 5px rgba(255, 255, 255, 0.5);
-  }
-
-  .portal text {
   }
 
   h1 {
