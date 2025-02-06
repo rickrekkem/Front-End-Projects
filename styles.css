@@ -12,33 +12,60 @@
       align-items: center;
       /*background-image: url("./assets/images/meowmeow.png");*/
       position: top;
-      background-position-y: -100px;
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 100vh;
-      background: linear-gradient(135deg, rgb(20, 20, 20), rgb(60, 60, 60));
+      background-image: url("./assets/images/bottle.png");
       overflow: hidden;
     }
+
+
+.overlay {
+    position: absolute;
+    width: 105vw;
+    height: 105vh;
+    border-radius: 15;
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent overlay */
+    filter: blur(20px);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+  }
+
   
   .buttons {
     justify-content: center;
     align-items: center;
     position: center;
     text-align: center;
-    width: 500px;
-    height: 600px;
+    width: 40vw;
+    height: 80vh;
   }
 
   .portal {
     margin: 20px;
     width: 300px;
-    height: 40px;
-    background: linear-gradient(135deg, rgb(59, 126, 72), rgb(91, 16, 86));
+    height: 80px;
+    background-image: url("./assets/images/button.png");
+    background-blend-mode: multiply;
+    filter: opacity(90%) saturate(40%) contrast(110%);
     color: rgb(222, 222, 222);
-    box-shadow: black;
-    text-shadow: black;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.9), -1px -1px 5px rgba(255, 255, 255, 0.5);
+  }
+
+  .portal text {
   }
 
   h1 {
-    color: rgb(222, 222, 222);
+    font-size: 40px;
+    text-decoration: underline 1px white;
+    background: linear-gradient(160deg, #000000, #ffffff);
+    background-size: 30vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2), -1px -1px 5px rgba(255, 255, 255, 0.4);
+    z-index: 2;
+  }
+
+  h2 {
+    font-size: 30px;
   }
