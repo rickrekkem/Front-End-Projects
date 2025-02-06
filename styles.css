@@ -45,6 +45,7 @@
     text-align: center;
     width: 20%;
     height: 40%;
+    max-height: 100vh;
     display: flex;
     flex-direction: column; /* Stack elements on smaller screens */
     align-items: center;
@@ -52,8 +53,8 @@
 
   .portal {
     margin: 20px;
-    width: 20vw;
-    height: 10vh;
+    width: 15vw;
+    height: 6vh;
     background-image: url("./assets/images/button.png");
     background-blend-mode: multiply;
     background-position: center;
