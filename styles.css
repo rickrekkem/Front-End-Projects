@@ -30,7 +30,11 @@
     backdrop-filter: blur(2px);
     z-index: -1;
   }
-
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   
   .buttons {
     justify-content: center;
