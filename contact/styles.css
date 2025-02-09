@@ -10,9 +10,9 @@ body {
 
 .card {
     position: center;
-    width: 600px;
-    height: 680px;
-    padding: 30px;
+    width: 35vw;
+    height: 80vh;
+    padding: 3vw;
     border-radius: 25px;
     background-color: hsl(0, 0%, 100%);
 }
@@ -21,25 +21,25 @@ body {
     display: flex; /* Enable flexbox layout */
     justify-content: space-between; /* Push items to the edges */
     align-items: flex-start; /* Align items at the top */
-    width: 580px;
+    width: 95%;
 }
 
 .nameEntryF,
 .nameEntryL {
     text-align: left;
-    width: 270px;
-    line-height: 5px;
+    width: 15vw;
+    line-height: 1vh;
 }
 
 .textBox {
-  padding-bottom: 20px;
+  padding-bottom: 2vh;
     input[type="text"] {
         width: 100%; /* Full width */
-        padding: 10px; /* Add padding */
-        margin: 10px 0; /* Add some margin */
+        padding: 1vw; /* Add padding */
+        margin: 1vw 0; /* Add some margin */
         border: 1px solid #ccc; /* Border styling */
         border-radius: 10px; /* Rounded corners */
-        font-size: 16px; /* Font size */
+        font-size: 1rem; /* Font size */
       }
       input[type="text"]:focus {
         border-color: #007BFF; /* Change border color on focus */
@@ -52,11 +52,11 @@ body {
 }
 
 .textBoxLong {
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
     input[type="text"] {
-        width: 580px; /* Full width */
-        padding: 10px; /* Add padding */
-        margin: 10px 0; /* Add some margin */
+        width: 96%; /* Full width */
+        padding: 1vw; /* Add padding */
+        margin: 1vw 0; /* Add some margin */
         border: 1px solid #ccc; /* Border styling */
         border-radius: 10px; /* Rounded corners */
         font-size: 16px; /* Font size */
@@ -73,8 +73,8 @@ body {
 
 .textBoxLarge {
   .flex-text {
-        width: 580px; /* Full width */
-        height: 100px;
+        width: 100%; /* Full width */
+        height: 10vh;
         padding: 0 10px; /* Add padding */
         margin: 10px 0; /* Add some margin */
         border: 1px solid #ccc; /* Border styling */
@@ -100,29 +100,35 @@ body {
 
 .error-message {
     color: red;
-    line-height: 0;
-    padding-top: 5px;
+    line-height: 0vh;
+    padding-top: 0.5vh;
+}
+
+.error-consent {
+    color: red;
+    line-height: 2vh;
+    padding-top: 0.5vh;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.5vw;
   }
 
 .query-options {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 1vw;
+    margin-top: 1vh;
   }
   
   .query-option {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 1vw 2vh;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 580px;
+    width: 50vw;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -132,7 +138,7 @@ label {
   }
   
   .query-option span {
-    font-size: 14px;
+    font-size: 1rem;
     color: #333;
   }
 
@@ -162,15 +168,15 @@ label {
   }
 
   .checkbox {
-    margin-top: 25px;
+    margin-top: 2vh;
   }
 
   .submit {
     color: #EAF7F0;
     background-color: hsl(169, 82%, 27%);
     border-radius: 10px;
-    width: 600px;
-    margin-top: 25px;
+    width: 100%;
+    margin-top: 2vh;
     outline: rgba(0, 0, 0, 0);
     border: rgba(0, 0, 0, 0);
     position: bottom;
@@ -178,4 +184,87 @@ label {
 
   h1 {
     margin-top: 0px;
+  }
+
+  @media (max-width: 110vh) {
+    .card {
+        position: center;
+        width: 60vw;
+        height: 70vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 50%);
+    }
+  
+    .nameEntryF,
+    .nameEntryL {
+        text-align: left;
+        width: 25vw;
+        line-height: 1vh;
+    }
+  
+  }
+  
+  @media (min-width: 150vh) and (max-height: 800px) {
+    .card {
+        position: center;
+        width: 40vw;
+        height: 110vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 20%);
+    }
+  }
+
+  @media (max-width: 160vh) {
+    .card {
+        position: center;
+        width: 60vw;
+        height: 100vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(5, 50%, 80%);
+    }
+  
+    .nameEntryF,
+    .nameEntryL {
+        text-align: left;
+        width: 25vw;
+        line-height: 1vh;
+    }
+
+  }
+  
+
+  @media (max-height: 30vw) {
+    .card {
+        position: center;
+        width: 40vw;
+        height: 130vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 50%);
+    }
+  }
+  
+  @media (min-width: 160vh) and (max-width: 1400px) {
+    .card {
+        position: center;
+        width: 40vw;
+        height: 100vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 80%);
+    }
+  }
+
+  @media (min-height: 120vw) {
+    .card {
+        position: center;
+        width: 60vw;
+        height: 80vh;
+        padding: 3vw;
+        border-radius: 25px;
+        background-color: hsl(0, 0%, 80%);
+    }
   }
