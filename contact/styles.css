@@ -208,24 +208,24 @@ label {
   @media (min-width: 150vh) and (max-height: 800px) {
     .card {
         position: absolute;
-        top: 0;
+        top: 10vh;
         width: 40vw;
         height: 110vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(90, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   }
 
   @media (max-width: 160vh) {
     .card {
         position: absolute;
-        top: 0;
+        top: 10vh;
         width: 80vw;
         height: 130vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(70, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   
     .nameEntryF,
@@ -240,12 +240,12 @@ label {
   @media (max-width: 160vh) and (min-height: 550px) {
     .card {
         position: absolute;
-        top: 0;
+        top: 10vh;
         width: 80vw;
         height: 90vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(70, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   
     .nameEntryF,
@@ -260,12 +260,12 @@ label {
   @media (max-width: 160vh) and (min-height: 800px) {
     .card {
         position: absolute;
-        top: 0;
+        top: 10vh;
         width: 80vw;
         height: 80vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(70, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   
     .nameEntryF,
@@ -285,19 +285,19 @@ label {
         height: 130vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(20, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   }
   
   @media (min-width: 160vh) and (max-width: 1400px) {
     .card {
         position: absolute;
-        top: 0;
+        top: 10vh;
         width: 60vw;
         height: 140vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(50, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   }
 
@@ -319,7 +319,7 @@ label {
         height: 180vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(0, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   }
 
@@ -330,6 +330,6 @@ label {
         height: 250vh;
         padding: 3vw;
         border-radius: 25px;
-        background-color: hsl(0, 50%, 50%);
+        background-color: hsl(0, 0%, 100%);
     }
   }
