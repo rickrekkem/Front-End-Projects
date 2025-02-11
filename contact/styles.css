@@ -239,7 +239,7 @@ label {
   @media (max-height: 30vw) {
     .card {
         position: center;
-        width: 40vw;
+        width: 60vw;
         height: 130vh;
         padding: 3vw;
         border-radius: 25px;
@@ -261,7 +261,7 @@ label {
   @media (min-height: 120vw) {
     .card {
         position: center;
-        width: 60vw;
+        width: 80vw;
         height: 80vh;
         padding: 3vw;
         border-radius: 25px;
