@@ -1,4 +1,4 @@
-# Project Name
+# Frontend Learning Projects
 
 Welcome to my **Frontend Learning Projects**! 🚀  
 
